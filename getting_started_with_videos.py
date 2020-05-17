@@ -3,7 +3,7 @@ import cv2
 cap = cv2.VideoCapture(0)
 
 forcc = cv2.VideoWriter_fourcc(*'XVID')          # 4CC codes
-output = cv2.VideoWriter("HELO.avi",forcc,20.0,(640,480))
+output = cv2.VideoWriter("Recorded video.avi",forcc,20.0,(640,480))
 
 while (cap.isOpened()):
     ret, frame = cap.read()
